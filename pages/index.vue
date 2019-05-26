@@ -1,47 +1,25 @@
 <template lang="pug">
-  section.container
-    logo
+div
+  ul
+    li
+      nuxt-link.link(to="/01")
+        h1 01 Pull RequestとCIを使ったGitHub Flowなブログ環境を作ってみた
+        img.thumbnail(src="./01/assets/01.png")
+    li
+      nuxt-link.link(to="/02")
+        h1 02 Font Awesomeのアイコンを検索できるAlfred 2のWorkflowを作ってみた
+        img.thumbnail(src="./02/assets/01.png")
+
 </template>
 
-<script>
-import Logo from '~/components/Logo.vue'
-
-export default {
-  components: {
-    Logo
+<style lang="scss" scoped>
+.link {
+  h1 {
+    font-size: 1.4rem;
   }
 }
-</script>
-
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+.thumbnail {
+  width: 240px;
+  height: 120px;
 }
 </style>

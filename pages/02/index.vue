@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  h1 02
+  h1 02 Font Awesomeのアイコンを検索できるAlfred 2のWorkflowを作ってみた
   img.thumbnail(src="./assets/01.png")
 
   p 当時はブログの再開が2年ぶりだったけど、作ってみたシリーズも同じく2年ぶり。お久しぶり。さて今回は、ものすっごくニッチなツールだけど、Font Awesomeを使ってる人でAlfredを使ってる人には喜んでもらえる気がする。イコール自分のことなんですけどね。

@@ -1,4 +1,6 @@
 <template lang="pug">
+div
+  nuxt-link(to="/") トップページ
   ul
     li
       nuxt-link(to="/01") Vol.1
