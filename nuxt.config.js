@@ -49,7 +49,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/style-resources'],
+  modules: ['@nuxtjs/style-resources', 'nuxt-svg-loader'],
   styleResources: {
     scss: ['~/assets/stylesheets/abstractions.scss']
   },
