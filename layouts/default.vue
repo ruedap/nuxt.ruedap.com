@@ -1,8 +1,11 @@
 <template lang="pug">
-div
-  logo
-  header-nav
-  nuxt
+.container
+  .left
+    logo
+  .center
+    header-nav
+  .right
+    nuxt
 </template>
 
 <script>
@@ -16,3 +19,22 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.container {
+  display: flex;
+}
+
+.left {
+  margin: 30px 40px 0 0;
+}
+
+.center {
+  margin: 80px 0 40px 0;
+  flex: 0 0 160px;
+}
+
+.right {
+  margin: 20px 40px 40px 0;
+}
+</style>
