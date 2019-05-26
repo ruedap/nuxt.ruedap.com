@@ -12,6 +12,23 @@ div
 
 </template>
 
+<script>
+export default {
+  head() {
+    return {
+      title: 'トップページ',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'トップページです'
+        }
+      ]
+    }
+  }
+}
+</script>
+
 <style lang="scss" scoped>
 .link {
   h1 {
