@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  h1 {{ title }}
+  h1.title {{ title }}
   img.thumbnail(src="./assets/01.png")
 
   p 当時はブログの再開が2年ぶりだったけど、作ってみたシリーズも同じく2年ぶり。お久しぶり。さて今回は、ものすっごくニッチなツールだけど、Font Awesomeを使ってる人でAlfredを使ってる人には喜んでもらえる気がする。イコール自分のことなんですけどね。
@@ -39,5 +39,9 @@ export default {
 .thumbnail {
   width: 240px;
   height: 120px;
+}
+
+.title {
+  color: $a-color-title;
 }
 </style>

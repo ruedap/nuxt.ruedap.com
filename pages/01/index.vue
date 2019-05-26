@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  h1 {{ title }}
+  h1.title {{ title }}
   img.thumbnail(src="./assets/01.png")
   p 今から1年ほど前に、自分でお気に入りのブログ環境を構築する記事が話題になっていて、それを読んだ時から、自分用のブログ環境を作りたいと思っていた。
   ul
@@ -41,5 +41,9 @@ export default {
 .thumbnail {
   width: 240px;
   height: 120px;
+}
+
+.title {
+  color: $a-color-title;
 }
 </style>
