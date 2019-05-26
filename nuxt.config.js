@@ -1,5 +1,16 @@
 import pkg from './package'
 
+// `DEPLOY_ENV` が `GH_PAGES` の場合のみ `router.base = '/<repository-name>/'` を追加する
+// https://ja.nuxtjs.org/faq/github-pages/
+const routerBase =
+  process.env.DEPLOY_ENV === 'GH_PAGES'
+    ? {
+        router: {
+          base: '/nuxt.ruedap.com/'
+        }
+      }
+    : {}
+
 export default {
   mode: 'universal',
 
@@ -60,5 +71,6 @@ export default {
         })
       }
     }
-  }
+  },
+  ...routerBase
 }
