@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "cross-env": "^5.2.0",
+    "emma.css": "^0.15.0",
     "nuxt": "^2.4.0"
   },
   "devDependencies": {
