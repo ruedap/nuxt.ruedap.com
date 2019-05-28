@@ -38,3 +38,27 @@ export default {
   margin: 20px 40px 40px 0;
 }
 </style>
+
+<style>
+.page-enter-active {
+  transition: opacity 0.15s ease-out;
+}
+.page-leave-active {
+  transition: opacity 0.15s ease-in;
+}
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+}
+
+.slide-left-enter,
+.slide-right-leave-active {
+  opacity: 0;
+  transform: translate(20px, 0);
+}
+.slide-left-leave-active,
+.slide-right-enter {
+  opacity: 0;
+  transform: translate(-20px, 0);
+}
+</style>
