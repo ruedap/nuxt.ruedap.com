@@ -6,10 +6,15 @@ const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
         router: {
-          base: '/nuxt.ruedap.com/'
+          base: '/nuxt.ruedap.com/',
+          middleware: 'pages'
         }
       }
-    : {}
+    : {
+        router: {
+          middleware: 'pages'
+        }
+      }
 
 export default {
   mode: 'universal',
