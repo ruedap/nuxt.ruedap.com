@@ -73,5 +73,8 @@ export default {
     },
     extractCSS: true
   },
+  generate: {
+    dir: 'contents'
+  },
   ...routerBase
 }
