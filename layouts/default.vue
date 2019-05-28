@@ -50,15 +50,4 @@ export default {
 .page-leave-active {
   opacity: 0;
 }
-
-.slide-left-enter,
-.slide-right-leave-active {
-  opacity: 0;
-  transform: translate(20px, 0);
-}
-.slide-left-leave-active,
-.slide-right-enter {
-  opacity: 0;
-  transform: translate(-20px, 0);
-}
 </style>

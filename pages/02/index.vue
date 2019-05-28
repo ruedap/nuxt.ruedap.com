@@ -8,15 +8,21 @@ div
   p あのアイコンフォントのクラス名を全然覚えられなくて、アイコンの数も300個以上あって把握できなくなっていて、毎回Font Awesomeのサイトを開いて探すのも面倒なので、 Font Awesomeのアイコンをインクリメンタルサーチしてそのクラス名をペーストできるAlfred 2用のプラグインを作ってみた。
 
   p 百聞は一見に如かず、どんなものかは以下のスクリーンキャストをご覧ください。
+
+  transition-example
 </template>
 
 <script>
+import TransitionExample from '@/components/TransitionExample'
 export default {
   data() {
     return {
       title:
         '02 Font Awesomeのアイコンを検索できるAlfred 2のWorkflowを作ってみた'
     }
+  },
+  components: {
+    TransitionExample
   },
   head() {
     return {
